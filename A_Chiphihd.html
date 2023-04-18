@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+	<title>Chi phí ước tính</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: right;
+  padding: 5px;
+  font-size: 36px;
+  color: #FD4;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="A_TrangChu.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li >
+				<a href="A_Dukhach.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m21.1 12.5l1.4 1.41l-6.53 6.59L12.5 17l1.4-1.41l2.07 2.08l5.13-5.17M10 17l3 3H3v-2c0-2.21 3.58-4 8-4l1.89.11L10 17m1-13a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"/></svg></i>
+					<span class="text">Du khách</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="A_TBooking.html">
+					<i class="bx"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 18V8.5A4.5 4.5 0 0 1 8.5 4h7A4.5 4.5 0 0 1 20 8.5v7a4.5 4.5 0 0 1-4.5 4.5H6a2 2 0 0 1-2-2z"/><path d="M8 12h3.5a2 2 0 1 1 0 4H8V9a1 1 0 0 1 1-1h1.5a2 2 0 1 1 0 4H9m7 4h.01"/></g></svg></i>
+					<span class="text">Booking</span>
+				</a>
+			</li>
+			<li>
+				<a href="A_TBáogiá.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.634 1.634 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.633 1.633 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10ZM12 7.25a.75.75 0 0 1 .75.75v.01c1.089.275 2 1.133 2 2.323a.75.75 0 0 1-1.5 0c0-.384-.426-.916-1.25-.916c-.824 0-1.25.532-1.25.916s.426.917 1.25.917c1.385 0 2.75.96 2.75 2.417c0 1.19-.911 2.049-2 2.323V16a.75.75 0 0 1-1.5 0v-.01c-1.089-.274-2-1.133-2-2.323a.75.75 0 0 1 1.5 0c0 .384.426.916 1.25.916c.824 0 1.25-.532 1.25-.916s-.426-.917-1.25-.917c-1.385 0-2.75-.96-2.75-2.417c0-1.19.911-2.048 2-2.323V8a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd"/></svg></i>
+					<span class="text">Báo giá </span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Hani</b></span>
+				<img style="display: inline;" src="images/hani.jpg">	
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+            <p style="font-size: 25px;"><b>Tour-DK11</b></p>
+      <div class="bg-white shadow rounded-lg">
+        
+        
+    <div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;">
+  
+    <div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5">
+    
+    <div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-gray-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> 
+    <div style="width:1110px !important;"><div  class="px-4 py-3 r bg-gray-200 rounded-lg mt-4" >
+       
+   
+      
+        
+
+            <div style="font-size: 15px; margin-top: 10px; margin-left: 30px;"> 
+                <button style="padding: 2px 5px;border-radius: 12px; background-color: rgb(191, 63, 28); color: white;">Kết thúc</button>
+            </div>
+       
+
+          
+        <div style="margin-top: 10px;" class="ml-auto flex items-center gap-2">
+          </a></div></h3> <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="A_listDk11.html">Dịch vụ</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="A_Danhsachdoan.html">Danh sách đoàn</a></div><div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="A_Thựcthu.html">Thực thu</a></div>  <div class="px-3 py-2 hover:text-blue-500 cursor-pointer  border-b-2 border-blue-500 text-blue-500 font-semibold "><a href="A_Chiphihd.html">Chi phí ước tính</a></div>
+          <div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="A_Lịch sửhđ.html">Dịch vụ hủy</a></div>
+         </div> <form class="grid grid-cols-12 gap-5 p-5" style="width: 1630px;" ><div class="col-span-8 flex flex-col gap-5">
+           
+        
+          <div class="table-data">
+            <div class="order">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Loại dịch vụ</th>
+                            
+                            <th style="width:200px;">Dịch vụ</th>
+                            <th>Ngày sử dụng</th>
+                            <th>Tổng chi</th>
+                            <th>Đã chi</th>
+                            <th>Còn lại</th>
+                            <th>Thanh toán bởi</th>
+                            <th >Thanh toán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ăn uống</td>
+                            <td>
+                              Ăn trưa tại nhà Hàng ReDeSun HOS
+                            </td>
+                            <td>01-10-2023</td>
+                            <td>500.000đ</td>
+                            <td>0đ</td>
+                            <td>500.000đ</td>
+                            <td>Công ty</td>
+                            <td><button style="padding: 6px 20px; background-color: rgb(224, 40, 40); color: white; border-radius: 10px;">Chưa thanh toán</button></td>
+                          
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+           
+            
+
+
+
+
+           
+            
+                </div></div></div></div></div></form> <div class="p-5 bg-gray-50 rounded-b-lg"><div class="flex items-center"><a href="A_TBooking.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> </div></div></div>
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+    
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>

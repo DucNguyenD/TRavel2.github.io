@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/A_trangchu.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Kế Toán-TrangChu</title>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="B_KETOAN_Chung.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li >
+				<a href="B_KETOANDonHang.html">
+					<i class="bx"><i class="fa-solid fa-cart-shopping"></i></i>
+					<span class="text">Đơn Hàng</span>
+				</a>
+			</li>
+			<li>
+				<a href="B_KETOAN_HoaDon.html">
+					<i class="bx"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><mask id="ipSTransactionOrder0"><g fill= "none" stroke-linejoin="round" stroke-width="4"><rect width="30" height="36" x="9" y="8" fill="#fff" stroke="# fff" rx="2"/><path stroke="#fff" stroke-linecap="round" d="M18 4v6m12-6v6"/><path stroke="#000" stroke-linecap="round" d ="M16 19h16m-16 8h12m-12 8h8"/></g></mask><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTransactionOrder0)"/></svg></i>
+					<span class="text">Hóa Đơn</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<span><b>Lyna</b></span>
+				<img style="display: inline" src="images/Lyna.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					
+					<ul class="breadcrumb">
+						<li>
+							<h2>Trang chủ</h2>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' style="color:rgb(35, 182, 91) ; background-color: rgb(241, 242, 242);" ></i>
+					<span class="text">
+						<span style=" color: rgb(35, 182, 91); font-size: 35px;"><b>2</b></span>
+						<p>Hóa Đơn </p>
+					</span>
+				</li>
+				<li>
+					<i class='bx' ><i class="fa-solid fa-cart-shopping"></i></i>
+					<span class="text">
+						<span style="color: #FFCE26;font-size: 35px;"><b>1</b></span>
+						<p>Đơn Hàng Chưa Xác Nhận</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx' >
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M11.025 21v-2.15q-1.325-.3-2.288-1.15t-1.412-2.4l1.85-.75q.375 1.2 1.113 1.825t1.937.625q1.025 0 1.738-.463t.712-1.437q0-.875-.55-1.387t-2.55-1.163q-2.15-.675-2.95-1.613t-.8-2.287q0-1.625 1.05-2.525t2.15-1.025V3h2v2.1q1.25.2 2.063.913t1.187 1.737l-1.85.8q-.3-.8-.85-1.2t-1.5-.4q-1.1 0-1.675.488T9.825 8.65q0 .825.75 1.3t2.6 1q1.725.5 2.613 1.588t.887 2.512q0 1.775-1.05 2.7t-2.6 1.15V21h-2Z"/></svg>
+					</i>
+					<span class="text">
+						<span style="color: rgb(243, 42, 42);font-size: 35px;"><b>2</b></span>
+						<p>Tổng Đơn Hàng</p>
+					</span>
+				</li>
+			</ul>
+
+			</div>
+			<div style="padding: 10px;"></div>
+			<div class="head-title">
+				<div class="left">
+					<h2>Thống kê tháng</h2>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Xuất báo cáo</span>
+					
+				</a>
+			</div>
+			<div class="table-data">
+				<div class="todo">
+						
+						<canvas id="earning"></canvas>
+				</div>
+			</div>
+				
+				<!--THỐNG KÊ-->
+				<div class="graphBox">
+					
+					<div class="box">
+					
+					  <canvas id="myChart"></canvas>
+					
+					  
+					</div>
+				</div>	
+			</div>
+			<div style="padding: 10px;"></div>
+			
+			
+			
+                                     
+						
+					</div>
+					
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="js/char2.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Doanh thu',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+<script>
+	$(".skills").addClass("active")
+$(".skills .skill .skill-bar span").each(function() {
+   $(this).animate({
+      "width": $(this).parent().attr("data-bar") + "%"
+   }, 1000);
+   $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+});
+setTimeout(function() {
+   $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+}, 2000);
+</script>
+</html>

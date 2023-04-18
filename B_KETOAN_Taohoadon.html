@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Kế Toán - Hóa Đơn</title>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="B_KETOAN_Chung.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+            <li >
+				<a href="B_KETOANDonHang.html">
+					<i class="bx"><i class="fa-solid fa-cart-shopping"></i></i>
+					<span class="text">Đơn Hàng</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="B_KETOAN_HoaDon.html">
+					<i class="bx"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><mask id="ipSTransactionOrder0"><g fill= "none" stroke-linejoin="round" stroke-width="4"><rect width="30" height="36" x="9" y="8" fill="#fff" stroke="# fff" rx="2"/><path stroke="#fff" stroke-linecap="round" d="M18 4v6m12-6v6"/><path stroke="#000" stroke-linecap="round" d ="M16 19h16m-16 8h12m-12 8h8"/></g></mask><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTransactionOrder0)"/></svg></i>
+					<span class="text">Hóa Đơn</span>
+				</a>
+			</li>
+			
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Lyna</b></span>
+				<img style="display: inline" src="images/Lyna.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+            <div class="bg-white shadow rounded-lg"><h3 class="text-2xl text-gray-800 p-5">Tạo hóa đơn</h3> <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 border-blue-500 text-blue-500 font-semibold"><a href="#">Chung</a></div> 
+           </div>
+            
+        <div class="col-span-2 bg-white rounded-lg shadow-sm p-5 grid grid-cols-2 gap-5">
+    
+            <div >
+                <div style="display: inline;">
+                    <span style="font-size: 25px;margin-left: 120px;"> <b><i class="fa-solid fa-bars"></i> Thông Tin Chung</b></span>
+                    <div style="margin-top: 20px; ">
+                        <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;"> Tên khách hàng <span class="text-red-500">*</span></font></font> <input type="text"  class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                        <font style="vertical-align: inherit;">
+                         <div style="margin-top: 20px;" >Email <span class="text-red-500">*</span></div></font><input style="opacity: 0.6;" type="email" value="@email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                        <font style="vertical-align: inherit;">
+                        <div style="margin-top: 20px;" >Điện thoại </div></font><input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                        <font style="vertical-align: inherit;">
+                        <div style="margin-top: 20px;" >Địa chỉ </div></font><input style="margin-bottom: 45px;" type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                        
+                
+    
+                    </div>
+                    <font style="vertical-align: inherit;">
+                    <span style="font-size: 25px; margin-left: 120px;"> <b><i class="fa-solid fa-bars"></i> Thông Tin Bổ Sung</b></span>
+                    <div style="margin-top: 20px; ">
+                        <font style="vertical-align: inherit; ">
+                        <font style="vertical-align: inherit;"> Mã hóa đơn <span class="text-red-500">*</span></font></font> <input type="text" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                            
+                        <font style="vertical-align: inherit;">
+                         
+                        <font style="vertical-align: inherit;">
+                        <div style="margin-top: 20px;" >Số đơn hàng </div></font><input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    </div>
+                
+    
+                  
+                   
+    
+                </div>
+            </div>
+            
+
+
+
+            <div style="background-color: rgb(253, 250, 245); border-radius: 10px;">
+                <span style="font-size: 25px; margin-left: 120px"> <b><i class="fa-solid fa-bars"></i> Thông Tin Thanh Toán</b></span>
+                <div style="margin-top: 20px; ">
+                    <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"> Tổng <span class="text-red-500">*</span></font></font> <input type="number" style="border-left: none;border-right: none; border-top: none;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    <font style="vertical-align: inherit;">
+                        <div style="margin-top: 20px;" > Hình thức thanh toán <span class="text-red-500">*</span> </div>
+                        <font style="vertical-align: inherit;"></font></font> <select style="border-left: none;border-right: none; border-top: none;opacity: 0.4;" class="form-text px-3 py-2 w-full rounded-lg border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ib4v35"><option style="opacity: 1;" value="online"><span style="opacity: 0.6;">Chọn</span></option><option value="offline">Tiền mặt</option> <option value="offline">Chuyển khoản</option></select>
+                        
+                        <font style="vertical-align: inherit;">
+                            <div style="margin-top: 20px;" > Chiết khấu<span class="text-red-500">*</span>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"></font></font> <input  type="text" value="%" style="border-left: none;border-right: none; border-top: none;opacity: 0.6;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                                <font style="vertical-align: inherit;">
+                        
+                                    <font style="vertical-align: inherit;">
+                                        <div style="margin-top: 20px;" > VAT<span class="text-red-500">*</span>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;"></font></font> <input  type="text" value="%" style="border-left: none;border-right: none; border-top: none;opacity: 0.6;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                                            <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            <div style="margin-top: 20px;" > Điện thoại<span class="text-red-500">*</span>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"></font></font> <input type="number" style="border-left: none;border-right: none; border-top: none;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                                <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            <div style="margin-top: 20px;" > Đã thanh toán<span class="text-red-500">*</span>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"></font></font> <input type="number" style="border-left: none;border-right: none; border-top: none;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                                <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            <div style="margin-top: 20px;" > Còn nợ<span class="text-red-500">*</span>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"></font></font> <input type="number" style="border-left: none;border-right: none; border-top: none;" class="form-select px-3 py-2 w-full rounded-full border border-black-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                            </font></font>        
+                </div> 
+            </div> </div> </div> </div> </div> </div> </div>
+            <span style="font-size: 25px; margin-left: 20px;"> <b><i class="fa-solid fa-bars"></i> Thông Tin Tour Du Lịch</b></span>
+            <div style="margin-top: 20px; margin-left: 20px; width: 1090px; ">
+                <div class="col-span-4 bg-white rounded-lg shadow-sm p-5 grid grid-cols-4 gap-5"><div><h3 class="font-semibold mb-2 text-gray-700">
+                    <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Mã tour</font></font></h3> <input style="opacity: 0.6;" type="text" value="@mã tour sẽ hiện ra thông tin tour" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    </div> 
+                    <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Tên tour</font></font></h3> <input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    
+                    
+                        </div> 
+                    <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Ngày đặt tour</font></font></h3> <input type="tel" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                        
+                    </div>
+                    <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Ngày kết thúc tour</font></font></h3> <input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    
+                    
+                    </div> 
+                    <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Số lượng du khách</font></font></h3> <input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    
+                    
+                    </div> 
+                    <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nhân viên hỗ trợ</font></font></h3> <input type="email" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                    
+                    
+                    </div> 
+                    
+                    </div>
+            </div>
+    
+    
+    </form> 
+    
+    <div class="p-5 bg-gray-50 rounded-b-lg">
+        
+    <div class="flex items-center"><a href="B_KETOAN_HoaDon.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto"><button type="button" class="bg-blue-500 text-white rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="x9psot"><a href="B_KETOAN_HoaDon.html">Bấm Tạo</a></button></div></div></div></div>
+            
+
+
+
+
+
+
+
+
+			
+
+       
+    
+		</main>
+   
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>

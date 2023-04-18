@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Sales-Báo Giá</title>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="A_TrangChu.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li >
+				<a href="A_Dukhach.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m21.1 12.5l1.4 1.41l-6.53 6.59L12.5 17l1.4-1.41l2.07 2.08l5.13-5.17M10 17l3 3H3v-2c0-2.21 3.58-4 8-4l1.89.11L10 17m1-13a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"/></svg></i>
+					<span class="text">Du khách</span>
+				</a>
+			</li>
+			<li >
+				<a href="A_TBooking.html">
+					<i class="bx"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 18V8.5A4.5 4.5 0 0 1 8.5 4h7A4.5 4.5 0 0 1 20 8.5v7a4.5 4.5 0 0 1-4.5 4.5H6a2 2 0 0 1-2-2z"/><path d="M8 12h3.5a2 2 0 1 1 0 4H8V9a1 1 0 0 1 1-1h1.5a2 2 0 1 1 0 4H9m7 4h.01"/></g></svg></i>
+					<span class="text">Booking</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="A_TBáogiá.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.634 1.634 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.633 1.633 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10ZM12 7.25a.75.75 0 0 1 .75.75v.01c1.089.275 2 1.133 2 2.323a.75.75 0 0 1-1.5 0c0-.384-.426-.916-1.25-.916c-.824 0-1.25.532-1.25.916s.426.917 1.25.917c1.385 0 2.75.96 2.75 2.417c0 1.19-.911 2.049-2 2.323V16a.75.75 0 0 1-1.5 0v-.01c-1.089-.274-2-1.133-2-2.323a.75.75 0 0 1 1.5 0c0 .384.426.916 1.25.916c.824 0 1.25-.532 1.25-.916s-.426-.917-1.25-.917c-1.385 0-2.75-.96-2.75-2.417c0-1.19.911-2.048 2-2.323V8a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd"/></svg></i>
+					<span class="text">Báo giá </span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Hani</b></span>
+				<img style="display: inline;" src="images/hani.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="bg-white shadow rounded-lg"><div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;"><div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5"><div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-white-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> <div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;"><div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-1/2 p-5"><div class="pb-5"><h3 class="mb-5 font-semibold text-gray-600">Danh sách học viên có thể nhận chứng chỉ</h3> <div><div class="flex items-center mb-2 col-span-3"><img src="https://ui-avatars.com/api/?name=Tô Hoàn Bảo" class="w-10 h-10 rounded-full mr-5"> <div>
+             
+                <div class="text-xs text-gray-500 italic">
+
+           
+                </div>
+			
+			
+			</div> <input type="checkbox" checked="checked" class="form-checkbox ml-auto"></div></div><div><div class="flex items-center mb-2 col-span-3"><img src="https://ui-avatars.com/api/?name=Võ Việt Hà" class="w-10 h-10 rounded-full mr-5"> <div>
+        
+                <div class="text-xs text-gray-500 italic">
+                </div></div> <input type="checkbox" checked="checked" class="form-checkbox ml-auto"></div></div> <div class="mt-5"><label class="text-gray-700 font-semibold block mb-2">Chữ ký giảng viên đào tạo</label> <input type="file"></div></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> <h3 class="text-2xl text-gray-800 flex items-center p-5">	Tour HA123- Đi Hội An
+      <div class="ml-auto flex items-center gap-2"><div class="flex items-center"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+    </span> <!----> <!----></div> 
+
+	<div class="flex items-center"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-50 text-white-100" style="color: white !important; background-color: red !important;">
+		Xác thực
+	  </span> <!----> <!----></div>
+     
+
+    <button onclick="document.getElementById('id01').style.display='block'" class="cursor-pointer flex items-center hover:bg-red-600 hover:text-white text-base  bg-white px-3 py-2 rounded-lg text-red-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>Xóa</button>
+    
+	
+
+
+		
+   
+    
+    
+    </button></div>
+
+
+
+    </h3>
+
+    <div id="id01" class="bg-white rounded-lg w-96 p-5" style="position:fixed; top: 20%; opacity: 0.6; right: 30%; background-color:#201f1ffa; display: none;"><div class="text-center py-10"><img src="https://cdn.pixabay.com/photo/2014/04/03/10/09/recycle-309974_960_720.png" class="w-24 h-24  mx-auto"> <p class="text-center text-xl text-white-700" style="color: #EEEEEE !important; margin-top: 20px;">Xóa thành công</p></div> <div class="flex items-center justify-center gap-5">
+		
+		<a href="A_TBáogiá.html"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></a>
+	
+		</div></div>
+
+
+	<div id="id02" class="bg-white rounded-lg w-96 p-5" style="position:fixed; top: 20%; right: 30%; background-color:#568fcdfa; display: none;"><div class="text-center py-10"><img src="https://cdn-icons-png.flaticon.com/512/747/747515.png" class="w-24 h-24  mx-auto"> <p class="text-center text-xl text-white-700" style="color: #EEEEEE !important; margin-top: 20px;">Bạn muốn Ẩn tour này?</p></div> <div class="flex items-center justify-center gap-5">
+			<a href="Quanlytour1.html">
+				<button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+			</a>
+			<a href="QuangLyTour.html"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></a>
+		
+	</div></div>
+    
+    
+   
+    <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 border-blue-500 text-blue-500 font-semibold"><a href="A_Thongtinbaogia2.html">Chung</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer"><a href="A_ThongtinBGlichtrinh2.html">Lịch trình</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer"><a href="A_ThongtinBG_Email2.html">Email</a></div>
+   
+    
+
+
+    </div> <form class="grid grid-cols-12 gap-5 p-5"><div class="col-span-8 flex flex-col gap-2" style="width: 700px;">
+        
+        <div style="font-size: 25px; background-color: rgb(208, 213, 215); border-radius: 2px;"><i class="fa-solid fa-chevron-down"></i> Thông Tin Du Khách</div>
+    <div>
+        <div><label class="font-semibold text-gray-700 mb-2 block">Du khách <span class="text-red-500">*</span></label> <textarea style="color: black;font-size: 17px;" rows="3" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50">Hoàn Tuyền 
+Email: ht@gmail.com
+SĐT:0393456882
+        </textarea></div>
+    
+        <div style="font-size: 25px; background-color: rgb(208, 213, 215); border-radius: 2px;"><i class="fa-solid fa-chevron-down"></i> Thông Tin Thêm</div>
+    
+    </div> 
+		
+        
+        <div><label class="font-semibold text-gray-700 mb-2 block">Mô tả ngắn</label> <textarea rows="5" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50">Du lịch Đà Nẵng - Huế - Cố đô giá tốt 2023. Nếu muốn tham quan hết những danh lam thắng cảnh và địa danh nổi tiếng ở Huế trong vòng 1 ngày thì DS-Travel sẽ là hành trình khám phá lý tưởng mà bạn đang tìm kiếm. Đến với Du Lịch Việt quý khách hàng sẽ được trải nghiệm tour, cũng như có cơ hội khám phá nhiều nơi, đặc biệt là ghé thăm chợ Đông Ba – biểu tượng của văn hóa, con người nơi đây. &lt;p&gt;&lt;span style="color:rgb(237, 119, 60)"&gt;Hành trình&lt;/span&gt;&lt;/p&gt; 2 Ngày 1 Đêm </textarea></div> 
+        <div><label class="font-semibold text-gray-700 mb-2 block">Thông tin chi tiết <span class="text-red-500">*</span></label> <textarea rows="15" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"> Huế cùng với Hội An và Thánh Địa Mỹ Sơn là 3 điểm đến trên hành trình di sản miền Trung mà hầu như du khách nào cũng không thể bỏ qua. Huế được biết tới là thành phố du lịch nổi tiếng của Việt Nam, hấp dẫn bởi khung cảnh thơ mộng, trữ tình. Bởi những công trình kiến trúc lăng tẩm uy nghi, tráng lệ. Và nét văn hóa đặc sắc và cả nền ẩm thực tinh túy. Khi đi tour Đà Nẵng đi Huế 1 ngày, quý khách sẽ được: Chiêm ngưỡng nét kiến trúc lộng lẫy, uy nguy của vua chúa thời Nguyễn. Đó là Đại Nội Huế với kiến trúc nghệ thuật cung đình độc đáo. Đó là Lăng Khải Định được tạo hình từ sành xứ, thủy tinh rất tinh xảo. Hiểu thêm về văn hóa cũng như những phong tục tập quán của vua chúa và giới quý tộc ngày xưa. Tham quan ngồi chùa Thiên Mụ linh thiêng trên đồi Hà Khê. Và ngắm nhìn vẻ đẹp bình dị, thơ mộng hai bờ sông Hương. * Khám phá ẩm thực Huế, thưởng thức các món ăn đặc sản thơm ngon, hấp dẫn của miền đất cố đô.
+        </textarea></div></div> <div class="col-span-4 flex flex-col gap-5"><div>
+
+            <div style="font-size: 25px; background-color: rgb(208, 213, 215); border-radius: 2px;"><i class="fa-solid fa-chevron-down"></i> Thông Tin Báo Giá</div> 
+            <div style="margin-top: 10px;margin-bottom: 20px;"><label class="font-semibold text-gray-700 mb-2 block">Mã báo giá <span class="text-red-500">*</span></label>
+            
+                <input type="text" value="BG1" min="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"> <small class="text-xs text-gray-500"></small></div>
+        <div style="margin-top: 10px;margin-bottom: 20px;"><label class="font-semibold text-gray-700 mb-2 block">Tên báo giá <span class="text-red-500">*</span></label>
+            
+                <input type="text" value="Tour HA123- Đi Hội An" min="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"> <small class="text-xs text-gray-500"></small></div>
+        <div style="margin-top: 10px;margin-bottom: 20px;"><label class="font-semibold text-gray-700 mb-2 block">Số ngày <span class="text-red-500">*</span></label>
+            
+                    <input type="number" value="2" min="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"> <small class="text-xs text-gray-500"></small></div>
+            
+            
+        
+        <input type="file" class="form-text w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> 
+        <span><svg style="color: red;display:inline;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023c.479 0 .774-.242.774-.651c0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018c.817.006 1.349-.444 1.349-1.396c.006-.83-.479-1.268-1.255-1.268z"></path><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.22.319c.254.202.426.533.426.923c-.001.392-.131.723-.367.948zm3.807 1.355c-.42.349-1.059.515-1.84.515c-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426c.415.308.675.799.675 1.504c0 .763-.279 1.29-.663 1.615zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74zM14 9h-1V4l5 5h-4z"></path></svg>Hợp đồng tour và dịch vụ.pdf 
+            <a href="#"><svg svg="" style="color: red;display:inline;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m9 7l2 5l-2 5h2l1-2.5l1 2.5h2l-2-5l2-5h-2l-1 2.5L11 7H9Z"></path></svg></a>
+             </span>
+         <div><label class="font-semibold text-gray-700 mb-2 block">Giá tiền <span class="text-red-500">*</span></label>
+            
+    <input type="number" value="10000000" min="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"> <small class="text-xs text-gray-500"></small></div>
+    
+    
+    <div><label class="font-semibold text-gray-700 mb-2 block">Ngày bắt đầu<span class="text-red-500">*</span></label> <input type="datetime" value="02-10-2023" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="3f6fai"></div> <div><label class="font-semibold text-gray-700 mb-2 block">Hướng dẫn viên phụ trách <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ijg4kl"><option value="">Lâm Mỹ Lài</option> </select></div> <div><label class="font-semibold text-gray-700 mb-2 block">Địa điểm tập trung <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ib4v35"><option value="online">Tại trung tâm</option> <option value="offline">Tại công ty</option></select></div></div></form> <form class="grid grid-cols-12 gap-5 p-5" style="display: none;"><div class="col-span-12"><div><div class="border border-gray-300 divide-y divide-gray-300"><div class="font-semibold text-gray-800 flex flex-col bg-gray-50"><div class="flex items-center p-3 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-3"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg> <span>Phần 1: Tổng quan về Powerpoint</span> <input type="text" class="w-full mr-2 form-text px-2 py-1 rounded-lg hidden"> <div class="ml-auto flex-none flex items-center"><span class="text-gray-400 text-sm font-normal">2 tiết</span> <!----></div></div> <div class="p-5 bg-white border-t border-gray-300 flex flex-col gap-3" style="display: none;"><div class="flex items-center font-normal relative"><span>Bài 1: Giới thiệu Powerpoint</span> <input type="text" class="w-full mr-2 form-text px-2 py-1 rounded-lg hidden"> <div class="ml-auto flex-none flex items-center"><div class="border border-gray-400 rounded-lg ml-auto w-8 h-8 flex items-center justify-center cursor-pointer" style="background-image: url(&quot;/resource.png&quot;); background-repeat: no-repeat; background-position: center center;"><div class="bg-white z-10 absolute w-52 py-2 border border-gray-400 rounded-lg right-20 top-0 resource-dropdown hidden"><label class="flex flex-col items-center px-3 py-1 mx-3 mb-2 bg-gray-100 text-gray-800 rounded-lg tracking-wide border border-gray-300 cursor-pointer hover:bg-gray-200"><span class="text-base leading-normal">Tải tệp mới</span> <input type="file" class="hidden"></label> </div></div> <button type="button" class="ml-2 w-8 h-8 rounded-lg border border-gray-300 bg-white flex justify-center items-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div></div><div class="flex items-center font-normal relative"><span>Bài 2: Hướng dẫn cơ bản Powerpoint</span> <input type="text" class="w-full mr-2 form-text px-2 py-1 rounded-lg hidden"> <div class="ml-auto flex-none flex items-center"><div class="border border-gray-400 rounded-lg ml-auto w-8 h-8 flex items-center justify-center cursor-pointer" style="background-image: url(&quot;/resource.png&quot;); background-repeat: no-repeat; background-position: center center;"><div class="bg-white z-10 absolute w-52 py-2 border border-gray-400 rounded-lg right-20 top-0 resource-dropdown hidden"><label class="flex flex-col items-center px-3 py-1 mx-3 mb-2 bg-gray-100 text-gray-800 rounded-lg tracking-wide border border-gray-300 cursor-pointer hover:bg-gray-200"><span class="text-base leading-normal">Tải tệp mới</span> <input type="file" class="hidden"></label> </div></div> <button type="button" class="ml-2 w-8 h-8 rounded-lg border border-gray-300 bg-white flex justify-center items-center "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div></div> <button type="button" class="flex inline-block items-center bg-gray-50 text-gray-800 hover:bg-gray-100 px-3 py-2 border border-gray-300 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+      </button></div></div></div></div> <button type="button" class="flex items-center bg-gray-50 text-gray-800 hover:bg-gray-200 px-3 py-2 mt-2 border border-gray-300 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg> Thêm mục
+        </button></div></form><div class="p-5 bg-gray-50 rounded-b-lg"><div class="flex items-center"><a href="A_TBáogiá.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto">
+        <a href="A_TBáogiá.html"><button type="button" class="bg-blue-500 text-white rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="16mvy">Lưu thay đổi</button></a></div>
+    
+    </div></div> <form class="grid gap-5 p-5" style="display: none;"><div class="text-red-500 italic">
+	
+
+	</div></form></div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>
