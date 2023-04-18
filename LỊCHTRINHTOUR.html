@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/lichtrinhtour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>LịchTrìnhTour</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/56942480bb.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+     ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    ul ul {
+      margin-top: 10px;
+    }
+
+    .add-btn {
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 12px;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      background-color: #f44336;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="TRANGCHU1.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="QuangLyTour.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Quản Lý Tour</span>
+				</a>
+			</li>
+			<li>
+				<a href="QLHUONGDV.html">
+				  <svg style="margin-left: 10px;margin-right:5.5px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192l1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"/><path fill="currentColor" d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"/></svg>
+					<span class="text">Quản Lý Hướng Dẫn Viên</span>
+				</a>
+			</li>
+			<li>
+				<a href="THEODOILICHTRINH.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h1V8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2zM20 8h-7l1.122-3.368A2 2 0 0 0 12.225 2H12L7 7.438V21h11l3.912-8.596L22 12v-2a2 2 0 0 0-2-2z"/></svg></i>
+					<span class="text">Theo Dõi Tour </span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<span><b>Dek</b></span>
+				<img style="display: inline;" src="images/Dek.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="px-10 py-5"><div class="bg-white shadow rounded-lg"><h3 class="text-2xl text-gray-800 p-5">Tạo tour</h3> <div class="flex border-b border-gray-300 px-5"><a href="TAOTOUR.html"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer">Chung</div></a> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 border-blue-500 text-blue-500 font-semibold">Lịch trình tour</div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer"><a href="TRANGTHAI.html">Trạng thái</a></div></div> <form class="grid grid-cols-12 gap-5 p-5" style="display: none;"><div class="col-span-8 flex flex-col gap-5"><div><label class="font-semibold text-gray-700 mb-2 block">Tên khóa học <span class="text-red-500">*</span></label> <input type="text" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="gilnvk"></div> <div><label class="font-semibold text-gray-700 mb-2 block">Mô tả ngắn</label> <textarea class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></textarea></div> <div><label class="font-semibold text-gray-700 mb-2 block">Thông tin chi tiết <span class="text-red-500">*</span></label> <textarea rows="5" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></textarea></div></div> <div class="col-span-4 flex flex-col gap-5"><div><h3 class="font-semibold mb-2 text-gray-700">Ảnh hiển thị</h3> <input type="file" class="form-text w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div><label class="font-semibold text-gray-700 mb-2 block">Giá tiền <span class="text-red-500">*</span></label> <input type="number" value="0" min="0" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="qf0x7kg"> <small class="text-xs text-gray-500">Nhập "0" nếu khóa học là FREE.</small></div> <div><label class="font-semibold text-gray-700 mb-2 block">Chi phí triển khai <span class="text-red-500">*</span></label> <input type="number" min="0" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="b26guf"></div> <div><label class="font-semibold text-gray-700 mb-2 block">Giảng viên phụ trách <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="18s2in"><option value="">-- Chọn giảng viên --</option> <option>Nguyễn Tiến Dũng</option><option>Bùi Trọng Nghĩa</option><option>Lê Thị Thu Huyền</option><option>Lê Nguyễn Thảo Nhi</option></select></div> <div><label class="font-semibold text-gray-700 mb-2 block">Địa điểm học <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="7yqo9"><option value="online">Online</option> <option value="offline">Offline</option></select></div></div></form>
+      <div id="list-container" style="margin-left: 120px;">
+        <ul id="main-list">
+          <li>
+            <span contenteditable="true" style="color:rgb(237, 119, 60);font-size: 20px;display: inline; margin-right: 100px; margin-left: -50px;">Điền thông tin</span>
+            <button class="add-btn" style="border-radius: 12px;">Thêm hoạt động</button>
+            <button class="delete-btn">Xóa hoạt động</button>
+            <ul>
+              <li>
+                <span contenteditable="true">Chi tiết
+                </span>
+                <button class="delete-btn" style="border-radius: 12px; padding: 8px; background-color: antiquewhite; color: black;">Xóa</button>
+                
+
+                
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        
+      </div>
+      <div style="height: 20px;"></div>
+      <div style="margin-left: 60px;"><button id="add-btn" type="button" class="flex items-center bg-gray-50 text-gray-800 hover:bg-gray-200 px-3 py-2 mt-2 border border-gray-300 rounded-lg" fdprocessedid="zlieo4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" style="margin-right: 120px; margin-left: -100px;"></path></svg> Thêm mục
+      </button></div>
+      
+      <div style="padding: 12px;"></div>   
+
+
+        
+
+    
+    
+  
+
+
+    </form> <form class="grid gap-5 p-5" style="display: none;"><div class="text-red-500 italic">
+  
+  </div> <div><div class="grid grid-cols-2 gap-5 mb-5"><div class="text-right"><p class="text-gray-500">Thời gian học từ</p> <input type="date" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div><p class="text-gray-500">đến</p> <input type="date" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div> <div class="grid grid-cols-12 gap-2"><div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 2</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 3</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 4</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 5</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 6</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Thứ 7</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div> <div class="col-span-3 p-5 rounded-lg bg-blue-200 font-semibold flex items-center">Chủ Nhật</div> <div class="col-span-9 p-5 rounded-lg bg-gray-50"><div class="flex items-center"><div><span class="mr-2">Từ</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div class="ml-5"><span class="mr-2">đến</span> <input type="time" class="form-text rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></div></div></div></div></form> <form class="grid gap-5 p-5" style="display: none;"><div><label class="font-semibold text-gray-700 mb-2 block">Trạng thái <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"><option value="Đang mở đăng ký">Đang mở đăng ký</option> <option value="Đóng đăng ký">Đóng đăng ký</option> <option value="Hủy lớp">Hủy lớp</option></select></div> <div><h3 class="font-semibold mb-2 text-gray-700">Ngày bắt đầu đăng ký <span class="text-red-500">*</span></h3> <input type="date" value="2021-10-10" class="form-text w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> <div><h3 class="font-semibold mb-2 text-gray-700">Ngày kết thúc đăng ký <span class="text-red-500">*</span></h3> <input type="date" value="2021-10-14" class="form-text w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div></form> <div class="p-5 bg-gray-50 rounded-b-lg"><div class="flex items-center"><a href="QuangLyTour.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto"><button type="button" class="bg-blue-500 text-white rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="5mdd6"><a href="QuangLyTour.html">Bấm tạo</a></button></div></div></div></div> <div class="flex flex-col mt-10"><p class="text-gray-600 text-center text-sm">Bản quyền thuộc DARIC © 2023.</p> <p class="flex items-center justify-center text-xs text-gray-500">DS-TRAVEL Built <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 w-5 h-5 text-red-500 inline-block"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg></p></div></div>
+      </div></div></div>
+
+    
+
+    </div>
+    
+    
+   
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+<script>
+  const mainList = document.getElementById("main-list");
+const addBtn = document.getElementById("add-btn");
+
+// Thêm một mục mới vào danh sách
+addBtn.addEventListener("click", function() {
+const li = document.createElement("li");
+li.innerHTML = `
+<span contenteditable="true" style="color:rgb(237, 119, 60);font-size: 20px;display: inline; margin-right: 100px; margin-left: -50px;">Điền thông tin</span>
+  <button class="add-btn">Thêm hoạt động</button>
+  <button class="delete-btn">Xóa hoạt động</button>
+  <ul></ul>
+`;
+mainList.appendChild(li);
+});
+
+// Xóa một mục trong danh sách
+mainList.addEventListener("click", function(event) {
+if (event.target.classList.contains("delete-btn")) {
+  event.target.parentNode.remove();
+}
+});
+
+// Chỉnh sửa tên một mục
+mainList.addEventListener("input", function(event) {
+if (event.target.tagName === "SPAN") {
+  event.target.parentNode.classList.add("edited");
+}
+});
+
+// Lưu thay đổi khi sửa tên một mục
+mainList.addEventListener("keypress", function(event) {
+if (event.target.tagName === "SPAN" && event.key === "Enter") {
+  event.preventDefault();
+  event.target.parentNode.classList.remove("edited");
+}
+});
+
+// Thêm một mục mới vào danh sách con
+mainList.addEventListener("click", function(event) {
+if (event.target.classList.contains("add-btn")) {
+  const ul = event.target.parentNode.querySelector("ul");
+  const li = document.createElement("li");
+  li.innerHTML = `
+    <span contenteditable="true">Hoạt động mới</span>
+    <button class="delete-btn" style="border-radius: 12px; padding: 8px; background-color: antiquewhite; color: black;">Xóa</button>
+    <ul></ul>
+  `;
+  ul.appendChild(li);
+}
+});
+</script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+<script>
+    /* Submit on Enter */
+$("#addNewItemInput").on("keydown", (e) => {
+  if (e.keyCode === 13) {
+    $("#addNewItemBtn").click()
+    $("#addNewItemInput").val("")
+  }
+})
+
+$("#titleInput").on("keydown", (e) => {
+  if (e.keyCode == 13) {
+    $("#titleInput").blur();
+  }
+})
+
+/* Add a new item */
+$("#addNewItemBtn").on("click", (e) => {
+  if ($("#addNewItemInput").val() == "") {
+    gsap.to("#addNewItemInput", .1, {x: -4})
+    gsap.to("#addNewItemInput", .1, {delay: .1, x: 4})
+    gsap.to("#addNewItemInput", .1, {delay: .2, x: -4})
+    gsap.to("#addNewItemInput", .1, {delay: .3, x: 4})
+    gsap.to("#addNewItemInput", .1, {delay: .4, x: 0})
+  } else {
+    const newItemInput = $("#addNewItemInput").val()
+  
+  $(".item").append(
+    `<div class="itemInner">
+      <i class="far fa-hand-point-right"></i>
+      <p>${newItemInput}</p>
+      <button class="removeItemBtn">
+       <i class="fas fa-trash-alt"></i>
+      </button>
+     </div>`)
+  
+  $("#addNewItemInput").val("")
+  
+  const newItem = e.target
+
+  gsap.to(".itemsWrapper, .item", .3, {paddingBottom: 30, ease: Back.easeOut})
+  gsap.to(".itemsWrapper, .item", .3, {delay: .15, paddingBottom: 8, y: 0, ease: Back.easeOut})
+  }
+})
+
+/* Completed item line through */
+$(".item").on("click", "i.fa-hand-point-right", (e) => {
+  const handPoint = e.target
+  const completedItem = e.target.parentElement
+  const text = completedItem.getElementsByTagName('p')
+  
+  $(text).css({"text-decoration": "line-through"})
+  gsap.to(handPoint, .3, {rotate: -30, transformOrigin: "center", ease: Back.easeOut})
+  gsap.to(handPoint, .3, {delay: .15, rotate: 0, transformOrigin: "center", ease: Back.easeOut})
+})
+
+/* Remove item */
+$(".item").on("click", "button.removeItemBtn", (e) => {
+    const removeItem = e.target
+    const itemInner = removeItem.parentElement    
+    $(itemInner).remove()
+  
+  gsap.to(".itemsWrapper, .item", 0, {paddingBottom: 52})
+  gsap.to(".itemsWrapper, .item", .3, {paddingBottom: 8, ease: Back.easeOut})
+})
+
+/* Edit list title animation */
+gsap.set(".fa-pencil-alt", {opacity: 0, rotate: -180, transformOrigin: "center"})
+gsap.set("#titleInput, #addNewItemInput", {border: "1px solid transparent", boxShadow: "0 0 0 rgba(211, 220, 248, .3)"})
+
+$("#titleInput").on("mouseenter", () => {
+    gsap.to(".fa-pencil-alt", .3, {rotate: 0, opacity: 1, transformOrigin: "center", ease: Back.easeOut})
+})
+
+$("#titleInput").on("mouseleave", () => {
+  if ($("#titleInput").is(":focus")) {
+    gsap.to(".fa-pencil-alt", .3, {rotate: 0, opacity: 1, transformOrigin: "center", ease: Back.easeOut})
+  } else if (!($("#titleInput").is(":focus"))) {
+    gsap.to(".fa-pencil-alt", .3, {rotate: -180, opacity: 0, transformOrigin: "center", ease: Back.easeOut})
+  }
+})
+
+$("#titleInput").on("focus", () => {
+  gsap.to(".fa-pencil-alt", .3, {rotate: 0, opacity: 1, transformOrigin: "center", ease: Back.easeOut})
+  gsap.to("#titleInput", .3, {border: "1px solid #e7ecfb", boxShadow: "0 0 12px rgba(211, 220, 248, .3)"})
+})
+
+$("#titleInput").on("focusout", () => {
+  gsap.to(".fa-pencil-alt", .3, {rotate: -180, opacity: 0, transformOrigin: "center", ease: Back.easeOut})
+  gsap.to("#titleInput", .3, {border: "1px solid transparent", boxShadow: "0 0 12px rgba(211, 220, 248, 0)"})
+})
+
+/* Trash fade on item hover */
+$(".item").on("mouseenter", ".itemInner", (e) => {
+  const trashBtn = $(e.target.querySelector(".removeItemBtn"))
+  gsap.to(trashBtn, .3, {opacity: 1})
+})
+
+$(".itemInner").on("mouseenter", ".removeItemBtn", (e) => {
+  const trashBtn = e.target
+  gsap.to(trashBtn, .3, {opacity: 1})
+})
+
+$(".innerItem").on("mouseleave", ".removeItemBtn", (e) => {
+  gsap.to(trashBtn, .3, {opacity: 0})
+})
+
+$(".item").on("mouseleave", ".itemInner", (e) => {
+  const trashBtn = $(e.target.querySelector(".removeItemBtn"))
+  gsap.to(trashBtn, .3, {opacity: 0})
+})
+
+$(".itemInner").on("mouseleave", ".removeItemBtn", (e) => {
+  const trashBtn = e.target
+  gsap.to(trashBtn, .3, {opacity: 0})
+})
+
+/* Add a new item animation */
+$("#addNewItemInput").on("focus", () => {
+  gsap.to("#addNewItemInput", .3, {border: "1px solid #e7ecfb", boxShadow: "0 0 12px rgba(211, 220, 248, .3)"})
+})
+
+$("#addNewItemInput").on("focusout", () => {
+  gsap.to("#addNewItemInput", .3, {border: "1px solid transparent", boxShadow: "0 0 12px rgba(211, 220, 248, 0)"})
+})
+
+$("#addNewItemBtn").on("mouseenter", () => {
+  gsap.to(".fa-plus", .3, {rotate: 90, ease: Back.easeOut})
+})
+
+$("#addNewItemBtn").on("mouseleave", () => {
+  gsap.to(".fa-plus", .3, {rotate: 0, ease: Back.easeOut})
+})
+</script>
+</html>

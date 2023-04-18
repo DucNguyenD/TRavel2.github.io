@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Supppor-CoHoi2</title>
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+     <script>
+        function myFunction6() {
+      var x = document.getElementById("myDIVs");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+   
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+        .chuyen:hover{
+            cursor: pointer;
+        }
+ 
+.hotline-phone-ring {
+  position: relative;
+  visibility: visible;
+  background-color: transparent;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  z-index: 11;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transition: visibility .5s;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+
+.hotline-phone-ring-circle-fill {
+    width: 55px;
+  height: 55px;
+  top: -6px;
+  left: 9px;
+  position: absolute;
+  background-color: rgba(83, 237, 72, 0.7);
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+    background-color: #4ee872;
+    width: 33px;
+  height: 33px;
+  top: 6px;
+  left: 20px;
+  position: absolute;
+  background-size: 20px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.hotline-bar > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-indent: 50px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+  color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+    -webkit-opacity: 0.1;
+  }
+  30% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    -webkit-opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -webkit-opacity: 0.1;
+  }
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotline-bar {
+    display: none;
+  }
+}
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="C_TrangChu.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li >
+				<a href="C_DuKhach.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m21.1 12.5l1.4 1.41l-6.53 6.59L12.5 17l1.4-1.41l2.07 2.08l5.13-5.17M10 17l3 3H3v-2c0-2.21 3.58-4 8-4l1.89.11L10 17m1-13a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"/></svg></i>
+					<span class="text">Tiềm Năng</span>
+				</a>
+			</li>
+			
+			<li class="active">
+				<a href="C_TuVan.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M6.53 4.008a4 4 0 1 1-.144 3.708a1.493 1.493 0 0 1-.884.288h-.5v.255c0 .19.072.363.19.494a.749.749 0 0 1 1.31.498a.75.75 0 0 1-.822.746a1.739 1.739 0 0 1-1.678-1.738V4.507a.5.5 0 0 1 .5-.5h2l.028.001ZM5.002 7.004h.5a.5.5 0 0 0 .5-.5v-.37a4.077 4.077 0 0 1 0-.268v-.859h-1v1.997ZM3 13c0-1.113.903-2 2.009-2H15a2 2 0 0 1 2 2c0 1.691-.833 2.966-2.135 3.797C13.583 17.614 11.855 18 10 18c-1.855 0-3.583-.386-4.865-1.203C3.833 15.967 3 14.69 3 13Z"/></svg></i>
+					<span class="text">Cơ Hội</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Bordie</b></span>
+				<img style="display: inline;" src="images/Bordie.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			
+            <div class="col-span-4 bg-white rounded-lg shadow-sm p-5  gap-5"><div>
+                
+                <div class="chuyen" style="padding:5px 15px; display:inline;background-color: rgb(27, 154, 31); border-radius: 5px; display: inline;  height: 200px; color: rgb(255, 255, 255); " onclick="myFunction()">Chuyển Báo Giá</div>
+                <div class="chuyen" style="padding:5px 15px; display:inline;background-color: rgb(27, 154, 31); border-radius: 5px; display: inline;  height: 200px; color: rgb(255, 255, 255)"><a href="C_Thanhcong.html">Đánh Dấu Thành Công</a></div>
+                <div class="chuyen" style="padding:5px 15px; display:inline;background-color: rgb(27, 154, 31); border-radius: 5px; display: inline;  height: 200px; color: rgb(255, 255, 255); "><a href="C_Cohoithatbai.html">Đánh Dấu Thất Bại</a></div>
+                
+            </div>
+              
+               
+               
+                
+           
+                
+                
+                </div>
+
+                        <div class="bg-white shadow rounded-lg"><div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;"><div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5"><div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-gray-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> 
+                        
+                       
+                        <div class="ml-auto flex items-center gap-2">
+                            </div></h3> 
+                            
+                            <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 border-blue-500 text-blue-500 font-semibold"><a href="C_Cohoi1.html">Chung</a></div><div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="C_Themcongviec1.html">Thêm công việc</a></div><div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="C_Email1.html">Email</a> </div> <button style="margin-left: 50px;"><svg style="color: rgb(54, 56, 56);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><path fill="currentColor" d="M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6.6-1 1.1-1.3 1.4l-.3.3c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zm-53.1-271.2c6.5-2.2 13.7.1 17.9 5.6l35.2 46.9l35.2-46.9c4.1-5.5 11.3-7.8 17.9-5.6S320 185.1 320 192v96c0 8.8-7.2 16-16 16s-16-7.2-16-16v-48l-19.2 25.6c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4L224 240v48c0 8.8-7.2 16-16 16s-16-7.2-16-16v-96c0-6.9 4.4-13 10.9-15.2zm173.1 38v.4c.1.1.6.8 2.2 1.7c3.9 2.3 9.6 4.1 18.3 6.8l.6.2c7.4 2.2 17.3 5.2 25.2 10.2c9.1 5.7 17.4 15.2 17.6 29.9c.2 15-7.6 26-17.8 32.3c-9.5 5.9-20.9 7.9-30.7 7.6c-12.2-.4-23.7-4.4-32.6-7.4c-1.4-.5-2.7-.9-4-1.4c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c1.7.6 3.3 1.1 4.9 1.6c9.1 3.1 15.6 5.3 22.6 5.5c5.3.2 10-1 12.8-2.8c1.2-.8 1.8-1.5 2.1-2c.2-.4.6-1.2.6-2.7v-.2c0-.7 0-1.4-2.7-3.1c-3.8-2.4-9.6-4.3-18-6.9l-1.2-.4c-7.2-2.2-16.7-5-24.3-9.6c-9-5.4-17.7-14.7-17.7-29.4c-.1-15.2 8.6-25.7 18.5-31.6c9.4-5.5 20.5-7.5 29.7-7.4c10 .2 19.7 2.3 27.9 4.4c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-7.3-1.9-14.1-3.3-20.1-3.4c-4.9-.1-9.8 1.1-12.9 2.9c-1.4.8-2.1 1.6-2.4 2c-.2.3-.4.8-.4 1.9zm-272 0v.4c.1.1.6.8 2.2 1.7c3.9 2.3 9.6 4.1 18.3 6.8l.6.2c7.4 2.2 17.3 5.2 25.2 10.2c9.1 5.7 17.4 15.2 17.6 29.9c.2 15-7.6 26-17.8 32.3c-9.5 5.9-20.9 7.9-30.7 7.6c-12.3-.4-24.2-4.5-33.2-7.6c-1.3-.4-2.5-.8-3.6-1.2c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c1.4.5 2.8.9 4.1 1.4c9.5 3.2 16.5 5.6 23.7 5.8c5.3.2 10-1 12.8-2.8c1.2-.8 1.8-1.5 2.1-2c.2-.4.6-1.2.6-2.7v-.2c0-.7 0-1.4-2.7-3.1c-3.8-2.4-9.6-4.3-18-6.9l-1.2-.4c-7.2-2.2-16.7-5-24.3-9.6c-9-5.3-17.7-14.6-17.8-29.3c-.1-15.2 8.6-25.7 18.5-31.6c9.4-5.5 20.5-7.5 29.7-7.4c9.5.1 22.2 2.1 31.1 4.4c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-6.6-1.8-16.8-3.3-23.3-3.4c-4.9-.1-9.8 1.1-12.9 2.9c-1.4.8-2.1 1.6-2.4 2c-.2.3-.4.8-.4 1.9z"/></svg></button> <div class="hotline-phone-ring-wrap" style="display: inline;">
+                                <div class="hotline-phone-ring" style="display: inline;">
+                                   
+                                    <div class="hotline-phone-ring-circle-fill"></div>
+                                    <div class="hotline-phone-ring-img-circle">
+                                    <a href="#" class="pps-btn-img">
+                                        <img src="https://nocodebuilding.com/wp-content/uploads/2020/07/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                                    </a>
+                                    </div>
+            
+                                </div>
+                            </div></div>
+                                <div class="flex border-b border-gray-300 px-5"></div> <form class="grid grid-cols-12 gap-5 p-5"><div class="col-span-8 flex flex-col gap-5">
+                              
+                                    <div><label class="font-semibold text-gray-700 mb-2 block" style="font-size: 20px;">Cơ Hội <span class="text-red-500">*</span></label>  <input style="border-left: none; border-right: none; border-top: none; font-size: 25px; color: black;" type="text" value="Cơ hội báo giá tour DL2" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div> 
+                                <div><label class="font-semibold text-gray-700 mb-2 block">Họ và tên <span class="text-red-500">*</span></label> <input type="text" value="Phạm Lão" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                                
+                                <div><label class="font-semibold text-gray-700 mb-2 block">Email <span class="text-red-500">*</span></label> <input type="text" value="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="sy1sp9"></div>
+                              
+                                <div><label class="font-semibold text-gray-700 mb-2 block">Số điện thoại <span class="text-red-500">*</span></label> <input type="text" value="0993456845" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                               
+                                <div><label class="font-semibold text-gray-700 mb-2 block">Địa chỉ </label> <input type="text" value="Bình Hưng Hòa - Hồ Chí Minh" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div>
+                                 
+                                <div><label class="font-semibold text-gray-700 mb-2 block">Ghi chú </label> 
+                    
+                                <textarea rows="15" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" style="height: 100px;">Cần thông tin chi tiết về báo giá</textarea>
+                                </div>
+                    
+                                </div> 
+                            
+                            <!-- Ô 2 -->
+                            <div class="col-span-4 flex flex-col gap-5"><div><h3 class="font-semibold mb-2 text-gray-700" style="margin-bottom: 20px; margin-top: 12px;">Ảnh đại diện</h3> <img src="images/av6.jpg" class="w-20 rounded-full mb-2 object-cover"> <input type="file" class="form-text w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></div>
+                            
+                            <div><label class="font-semibold text-gray-700 mb-2 block">Ngày sinh <span class="text-red-500">*</span></label> <input type="datetime" value="04/11/2002" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                            <div><label class="font-semibold text-gray-700 mb-2 block">Giới tính <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ijg4kl"><option value="">Nam</option> <option value="1">Nữ</option></select></div>
+                            <div><label class="font-semibold text-gray-700 mb-2 block">Mức độ ưu tiên <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ijg4kl"> <option value="1">Important</option><option value="2">Medium</option><option value="2">Urgent</option></select></div>
+                            <div><label class="font-semibold text-gray-700 mb-2 block">Giai đoạn <span class="text-red-500">*</span></label> <select class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ijg4kl"> <option value="1">Du khách xem xét và phản hồi</option><option value="2">Tư vấn & Báo giá</option><option value="2">Tiếp cận du khách</option></select></div>
+                            </div>
+                            
+                            
+                                
+                            
+                            </form> <form class="grid grid-cols-12 gap-5 p-5" style="display: none;"><div class="col-span-12 flex flex-col gap-2"><div><div class="flex items-center"><div class="flex-shrink-0 h-14 w-14"><a href="/courses/L%C3%A0m%20quen%20v%E1%BB%9Bi%20Powerpoint?role=manager" class=""><img src="/course-1.jpg" class="h-14 w-14 rounded-lg object-cover"></a></div> <div class="ml-4"><div class="font-medium text-gray-900"><a href="/courses/1?role=manager" class="">
+                                <h3 class="text-2xl text-gray-800 flex items-center p-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14c0 .53-.21 1.04-.59 1.41c-.37.38-.88.59-1.41.59H5c-.53 0-1.04-.21-1.41-.59C3.21 20.04 3 19.53 3 19V5c0-1.11.89-2 2-2m6 6h2V7h-2v2m3 8v-2h-1v-4h-3v2h1v2h-1v2h4Z"></path></svg>Thông tin khách hàng
+                                    <div class="ml-auto flex items-center gap-2">
+                                    </div></h3>    
+                            
+                                 
+                                  
+                    
+                                    </a></div></div></div></div></div></form></div></div></div>
+    
+    
+                                    <div class="bg-white shadow rounded-lg"><div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;"><div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5"><div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-gray-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> <h3 class="text-2xl text-gray-800 flex items-center p-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14c0 .53-.21 1.04-.59 1.41c-.37.38-.88.59-1.41.59H5c-.53 0-1.04-.21-1.41-.59C3.21 20.04 3 19.53 3 19V5c0-1.11.89-2 2-2m6 6h2V7h-2v2m3 8v-2h-1v-4h-3v2h1v2h-1v2h4Z"/></svg>Thông tin thêm
+                                        <div class="ml-auto flex items-center gap-2">
+                                        </div></h3> <div class="flex border-b border-gray-300 px-5"></div> <form class="grid grid-cols-12 gap-5 p-5"><div class="col-span-8 flex flex-col gap-5">
+                                          
+                                            <div><label class="font-semibold text-gray-700 mb-2 block">Người giới thiệu </label> <input type="text" value="" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                                            <div><label class="font-semibold text-gray-700 mb-2 block">Người phụ trách </label> <input type="text" value="Bordie" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                                            
+                                          
+                                             
+                                            <div><label class="font-semibold text-gray-700 mb-2 block">Ghi chú </label> 
+                                
+                                            <textarea rows="15" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" style="height: 100px;">
+                                            </textarea>
+                                            </div>
+                                
+                                            </div> 
+                                        
+                                        <!-- Ô 2 -->
+                                        <div class="col-span-4 flex flex-col gap-5">
+                                        
+                                        
+                                            <div><label class="font-semibold text-gray-700 mb-2 block">Ngành nghề </label> <input type="text" value="Hệ Thống Thông Tin Quản Lý" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                                        <div><label class="font-semibold text-gray-700 mb-2 block">Nguồn <span class="text-red-500">*</span></label> <input type="text" value="Kênh Website" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="didjq"></div> 
+                        
+                                        </div>
+                                        
+                                        
+                                                            
+          
+                <div id="myDIV" style="display: none;position: fixed; z-index: 9999999; top: 20%; left: 30%;background-color: rgb(104, 202, 151); border-radius: 5px; ">
+                    <div style="margin-top: 10px; margin-bottom: 10px;"><svg style="display: inline;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.634 1.634 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.633 1.633 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10ZM12 7.25a.75.75 0 0 1 .75.75v.01c1.089.275 2 1.133 2 2.323a.75.75 0 0 1-1.5 0c0-.384-.426-.916-1.25-.916c-.824 0-1.25.532-1.25.916s.426.917 1.25.917c1.385 0 2.75.96 2.75 2.417c0 1.19-.911 2.049-2 2.323V16a.75.75 0 0 1-1.5 0v-.01c-1.089-.274-2-1.133-2-2.323a.75.75 0 0 1 1.5 0c0 .384.426.916 1.25.916c.824 0 1.25-.532 1.25-.916s-.426-.917-1.25-.917c-1.385 0-2.75-.96-2.75-2.417c0-1.19.911-2.048 2-2.323V8a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd"></path></svg><span style="font-size: 20px;">Chuyển Báo Giá</span> <a href="C_Cohoi1.html" ><i class="fa-solid fa-xmark" style="margin-left: 500px; margin-right: 20px;"></i></a></div> 
+                    <div class="flex border-b border-gray-300 px-5"></div>
+                        
+                    <form class="grid grid-cols-12 gap-5 p-5"><div class="col-span-4 flex flex-col gap-5">
+                                  
+                      <div style="margin-left: 28px;">
+                        <form action="/action_page.php">
+                            <p style="font-weight: 600; display: inline;">Báo giá du khách:</p>
+                            <input style="margin-left: 13.5px;" type="radio" id="html" name="fav_language" value="HTML">
+                            <label  for="html">Tạo du khách mới</label>
+                            <div style="margin-left: 164px;">
+                                <input  onclick="myFunction6()" type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">Liên kết với du khách hiện tại</label>
+                            </div>
+                            <div style="margin-left: 164px;">
+                              <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">Không liên kết với du khách nào</label>
+                          </div>
+                            <br>
+                        </form>
+                      
+                        <div id="myDIVs" style="display: none; margin-bottom: 20px;">
+                            <div>Du khách</div>
+                            <select style="width: 600px;"  class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-0.5"> <option value="">Hoàn Tuyên</option><option value=""></option><option value=""></option><option value=""></option></select>
+                        </div>
+                       
+                        
+                        <a href="" style="padding: 6px 10px;border-radius: 4px; background-color: #4ee872; display: inline;">Chuyển báo giá</a>
+                        <a href="" style="padding: 6px 10px;border-radius: 4px; background-color: #eaf0ec; display: inline;">Hủy</a>
+                    </div> 
+                    
+                    <!-- Ô 2 -->
+                    
+           
+
+            
+                
+                                        
+                                        </form> <form class="grid grid-cols-12 gap-5 p-5" style="display: none;"><div class="col-span-12 flex flex-col gap-2"><div><div class="flex items-center"><div class="flex-shrink-0 h-14 w-14"><a href="/courses/L%C3%A0m%20quen%20v%E1%BB%9Bi%20Powerpoint?role=manager" class=""><img src="/course-1.jpg" class="h-14 w-14 rounded-lg object-cover"></a></div> <div class="ml-4"><div class="font-medium text-gray-900"><a href="/courses/1?role=manager" class="">
+                                            
+                                        
+                                             
+                                              
+                                
+                                                </a></div></div></div></div></div></form></br></div></div></div><a href="/courses/1?role=manager" class=""> </a><div class="p-5 bg-gray-50 rounded-b-lg"><a href="/courses/1?role=manager" class=""></a><div class="flex items-center"><a href="C_TuVan.html" class=""></a><a href="C_TuVan.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto"><button type="button" class="bg-blue-500 text-white rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="ewu5h"><a href="C_TuVan.html">Cập nhật</a></button></div>
+    
+                                </main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>

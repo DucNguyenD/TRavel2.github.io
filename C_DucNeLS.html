@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Supppor-Hoantuyen</title>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="C_TrangChu.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="C_DuKhach.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m21.1 12.5l1.4 1.41l-6.53 6.59L12.5 17l1.4-1.41l2.07 2.08l5.13-5.17M10 17l3 3H3v-2c0-2.21 3.58-4 8-4l1.89.11L10 17m1-13a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"/></svg></i>
+					<span class="text">Du khách</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="C_TuVan.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M6.53 4.008a4 4 0 1 1-.144 3.708a1.493 1.493 0 0 1-.884.288h-.5v.255c0 .19.072.363.19.494a.749.749 0 0 1 1.31.498a.75.75 0 0 1-.822.746a1.739 1.739 0 0 1-1.678-1.738V4.507a.5.5 0 0 1 .5-.5h2l.028.001ZM5.002 7.004h.5a.5.5 0 0 0 .5-.5v-.37a4.077 4.077 0 0 1 0-.268v-.859h-1v1.997ZM3 13c0-1.113.903-2 2.009-2H15a2 2 0 0 1 2 2c0 1.691-.833 2.966-2.135 3.797C13.583 17.614 11.855 18 10 18c-1.855 0-3.583-.386-4.865-1.203C3.833 15.967 3 14.69 3 13Z"/></svg></i>
+					<span class="text">Tư Vấn & Hỗ Trợ </span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Bordie</b></span>
+				<img style="display: inline;" src="images/Bordie.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			
+		
+
+                        <div class="bg-white shadow rounded-lg"><div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;"><div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5"><div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-gray-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> <h3 class="text-2xl text-gray-800 flex items-center p-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14c0 .53-.21 1.04-.59 1.41c-.37.38-.88.59-1.41.59H5c-.53 0-1.04-.21-1.41-.59C3.21 20.04 3 19.53 3 19V5c0-1.11.89-2 2-2m6 6h2V7h-2v2m3 8v-2h-1v-4h-3v2h1v2h-1v2h4Z"></path></svg>Thông tin du khách
+                            <div class="ml-auto flex items-center gap-2">
+                            </div></h3> 
+                            
+                            <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 "><a href="C_Ducne.html">Chung</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-blue-500 text-blue-500 font-semibold"><a href="C_DucNeLS.html">Lịch sử đặt tour</a></div> </div>
+                                <div class="flex border-b border-gray-300 px-5"></div> <form class="grid grid-cols-12 gap-5 p-5"><div class="col-span-8 flex flex-col gap-5">
+                              
+                           <!--  -->
+                           <div style="width: 1090px;" class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"><table class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Tour
+                          </font></font></th> <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Trạng thái
+                          </font></font></th> <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Thanh toán
+                          </font></font></th> <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Trị giá
+                          </font></font></th> <th scope="col" class="relative px-6 py-3"></th></tr></thead> <tbody class="bg-white divide-y divide-gray-200"><tr><td class="px-6 py-4 whitespace-nowrap"><div class="flex items-center"><div class="flex-shrink-0 h-14 w-14"><a href="QL-SG5.html" class=""><img src="https://top10hue.vn/wp-content/uploads/2022/10/hinh-anh-hue-43.jpg" class="h-14 w-14 rounded-lg object-cover"></a></div> <div class="ml-4"><div class="font-medium text-gray-900"><a href="QL-SG5.html" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          SQ5-Tour từ Đà Nẵng đến Huế
+                        </font></font></a></div> <div class="text-sm text-gray-500"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        HDV. </font><font style="vertical-align: inherit;">Lâm Mỹ Lài
+                      </font></font></div></div></div></td> <td class="px-6 py-4 whitespace-nowrap"><div class="flex items-center"><span style="color: white; background-color: red;" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  <p>Kết thúc</p>
+                </font>
+               
+              
+              
+              
+                  </font></span> <!----> <!----></div></td> <td class="px-6 py-4 whitespace-nowrap text-gray-700 font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; background-color: rgb(16, 172, 37); border-radius: 10px; font-size: 12px; color: white;">
+                 Đã thanh toán
+                 <td><b style="margin-left: 20px;">5 Triệu</b></td>
+                </font></font></td> <tr><td class="px-6 py-4 whitespace-nowrap"><div class="flex items-center"><div class="flex-shrink-0 h-14 w-14"><a href="#" class=""><img src="https://demoda.vn/wp-content/uploads/2022/02/hinh-anh-sai-gon-nay-nhon-nhip.jpg" class="h-14 w-14 rounded-lg object-cover"></a></div> <div class="ml-4"><div class="font-medium text-gray-900"><a href="#" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          
+      SG11-Tour đến nơi Sài Gòn 152
+                        </font></font></a></div> <div class="text-sm text-gray-500"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                       </font><font style="vertical-align: inherit;">HDV.Bá Thiên Hương
+                      </font></font></div></div></div></td> <td class="px-6 py-4 whitespace-nowrap"><div class="flex items-center"><!---->
+                      <span style="color: white; background-color: red;" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  Kết thúc<td class="px-6 py-4 whitespace-nowrap text-gray-700 font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; background-color: rgb(16, 172, 37); border-radius: 10px; font-size: 12px; color: white;">
+                    Đã thanh toán
+                   </font></font></td>
+                </font></font></span> <!----></div></td> <td class="px-6 py-4 whitespace-nowrap text-gray-700 font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  <b>2 Triệu</b>
+                </font></font></td>  <td class="px-6 py-4 whitespace-nowrap text-right"><!---->  </tbody></table></div>
+                                            
+                                        
+                                       
+                                            
+                                        
+                                             
+                                              
+                                
+                                                </a></div></div></div></div></div></form></div></div></div></div><a href="/courses/1?role=manager" class=""> </a><div class="p-5 bg-gray-50 rounded-b-lg"><a href="/courses/1?role=manager" class=""></a><div class="flex items-center"><a href="C_DuKhach.html" class=""></a><a href="C_DuKhach.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto">></div>
+    
+                                </main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>
